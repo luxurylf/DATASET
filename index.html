@@ -78,7 +78,19 @@
           font-weight: bold; /* 字体粗体 */
           color: #220202;
       }
-
+      .sectionab {
+      /* 你可以根据需要调整section的外边距 */
+      margin: 20px;
+    }
+ 
+    .publication-abs {
+      text-align: justify; /* 设置文本两端对齐 */
+      font-size: 20px; /* 设置字体大小 */
+      padding: 0 20px; /* 添加左右内边距，模拟页边距效果 */
+      /* 如果需要上下内边距，可以添加类似下面的行 */
+      /* margin-top: 10px; */
+      /* margin-bottom: 10px; */
+    }
 
       .img {
               margin-top: 5px; /* 减少与上一个 section 的距离 */
@@ -156,26 +168,38 @@
     </div>
   </section>
 
-  <section class="abj" style="margin: 10px;">
-    <div class="content has-text-justified"  style="text-align: justify; font-size: 20px;">
-      <p>
-        Abstract: Collecting and understanding three-dimensional (3D) information is critical to improving the intelligence of robots. 
-        Robots typically rely on vision devices equipped at fixed positions to acquire 3D information about target objects. 
-        However, the data captured by the robot is often limited to a single perspective, resulting in partial information and posing significant 
-        challenges to subsequent tasks such as grasping and navigation.
-        Tactile sense, an essential part of robotic perception, gives robots more precise local object features. 
-        The fusion of vision and tactile is appealing, which can help robots to fully understand object properties and shapes to improve the success 
-        rate of robotic task execution. Unfortunately, there is a lack of comprehensive real-world datasets that integrate information from these two 
-        perceptual modalities. Therefore, we have meticulously constructed a spatially aligned visual-tactile dataset derived from real-world scenarios, 
-        called VisTacPoint, which includes visual and tactile point clouds as well as raw tactile data. The VisTacPoint dataset contains data for a total 
-        of 207 desktop objects across 8 categories. Our dataset can be widely applied to object understanding tasks such as 3D reconstruction, 
-        object recognition based on vision-tactile fusion, empowering robotic embodied and spatial intelligence. Furthermore, to accommodate diverse task 
-        requirements, we have constructed multiple variants of VisTacPoint for selection. Multiple visual-tactile fusion methods were applied to VisTacPoint 
-        for different tasks. Finally, the challenges of multi-modal fusion for robotic embodied perception are summarized.
-
-      </p>
+  <section class="sectionab">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-abs">
+              Abstract: Collecting and understanding three-dimensional (3D) information is critical to improving the intelligence of robots. 
+              Robots typically rely on vision devices equipped at fixed positions to acquire 3D information about target objects. 
+              However, the data captured by the robot is often limited to a single perspective, resulting in partial information and posing significant 
+              challenges to subsequent tasks such as grasping and navigation.
+              Tactile sense, an essential part of robotic perception, gives robots more precise local object features. 
+              The fusion of vision and tactile is appealing, which can help robots to fully understand object properties and shapes to improve the success 
+              rate of robotic task execution. Unfortunately, there is a lack of comprehensive real-world datasets that integrate information from these two 
+              perceptual modalities. Therefore, we have meticulously constructed a spatially aligned visual-tactile dataset derived from real-world scenarios, 
+              called VisTacPoint, which includes visual and tactile point clouds as well as raw tactile data. The VisTacPoint dataset contains data for a total 
+              of 207 desktop objects across 8 categories. Our dataset can be widely applied to object understanding tasks such as 3D reconstruction, 
+              object recognition based on vision-tactile fusion, empowering robotic embodied and spatial intelligence. Furthermore, to accommodate diverse task 
+              requirements, we have constructed multiple variants of VisTacPoint for selection. Multiple visual-tactile fusion methods were applied to VisTacPoint 
+              for different tasks. Finally, the challenges of multi-modal fusion for robotic embodied perception are summarized.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  
+  <section class="img">
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/table.png" alt="Centered Image"/>  
+    </div>
+  </section>
+
   <section class="section3">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -189,12 +213,6 @@
       </div>
     </div>
   </section>
-  <section class="img">
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/table.png" alt="Centered Image"/>  
-    </div>
-  </section>
-
 
   <section class="img">
     <div style="display: flex; justify-content: center; align-items: center;">  
