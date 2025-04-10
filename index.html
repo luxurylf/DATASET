@@ -131,6 +131,17 @@
       .img {
         margin-top: 5px; /* 调整间距大小，例如 20px */
       }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; /* 可选：增加图片之间的间距 */
+    }
+  
+    .image-small img {
+      max-width: 20%;
+      height: auto;
+    }
   </style>
   </head>
 <body>
@@ -351,8 +362,11 @@
     </div>
   </section>
   <section class="section3">
-    <div style="display: flex; justify-content: center; align-items: center;">  
+    <!-- <div style="display: flex; justify-content: center; align-items: center;">  
       <img src="./static/images/process.png" alt="Centered Image"/>  
+    </div> -->
+    <div class="image-container image-small">
+      <img src="./static/images/process.png" alt="Small Image"/>
     </div>
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -564,8 +578,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="is-size-15 publication-text">
-              contributions:
+            <div class="is-size-30 publication-text">
+              Contributions:
             </div>
           </div>
         </div>
