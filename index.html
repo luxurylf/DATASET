@@ -213,9 +213,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="sectionfig1text">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -237,6 +234,29 @@
       </div>
     </div>
   </section>
+
+  <!-- <section class="sectionfig1text">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              Multi-modal learning is a key area in Artificial Intelligence (AI) research, focusing on integrating information from diverse sources, 
+              such as vision, sound, text and touch, to enhance machine learning models [18][19][20]. Recently, this field has witnessed significant 
+              advancements and broad applications. This paper specifically explores fusion techniques for visual and tactile data. 
+              Visual-tactile fusion is crucial for enabling robotic systems to achieve comprehensive object understanding and dexterous manipulation, 
+              mirroring human-like interaction capabilities. Visual sensors can capture high-resolution images, enabling robots to accurately identify 
+              the position and shape of objects [21][22]. Tactile sensors, on the other hand, can detect physical properties such as hardness and 
+              texture [23][24]. Combining these two types of data can improve recognition accuracy, particularly for objects that appear similar but 
+              differ in physical characteristics. The visual-tactile multi-modal learning process and its applications are illustrated in Fig. 1. The 
+              multi-modal perception model acts as the brain of a robot, providing the cognitive foundation for subsequent tasks, such as object 
+              understanding and robotic grasping, by processing data from its sensing devices.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
   
   <section class="img">
     <div style="display: flex; justify-content: center; align-items: center;">  
@@ -256,6 +276,24 @@
         </div>
       </div>
     </div>
+
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              High-quality datasets are essential for training and improving multi-modal learning models. Datasets can provide sufficient 
+              training samples for the model to adequately learn the desired features and ensure that the model operates effectively in different 
+              scenarios and conditions. In recent years, numerous visual-tactile multi-modal datasets for object understanding or robotic manipulation have emerged, 
+              including Touch100k and OBJECTFOLDER 1.0 , which we have concisely summarized in Table 1. Point clouds can explicitly represent 3D structures through a dense set of points, enabling accurate geometric reconstruction and 
+              depth perception, with significant advantages in spatial understanding. The integration of visual and tactile modalities into 
+              a unified point cloud framework (called a visual-tactile point cloud) allows us to exploit the complementary strengths of both modalities. 
+              In this work, our aim is to construct a visual-tactile point cloud dataset from the real world for object understanding.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="img">
@@ -263,69 +301,7 @@
       <img src="./static/images/device.png" alt="Centered Image"/>  
     </div>
 
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-8 publication-text">
-              High-quality datasets are essential for training and improving multi-modal learning models [33][34]. Datasets can provide sufficient 
-              training samples for the model to adequately learn the desired features and ensure that the model operates effectively in different 
-              scenarios and conditions [35]. By leveraging well-designed and accurately labeled multi-modal datasets, models can better understand 
-              the relationships and complementary features between different modalities, enabling deeper integration and more efficient utilization of 
-              complex information.
    
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-8 publication-text">
-              In recent years, numerous visual-tactile multi-modal datasets for object understanding or robotic manipulation have emerged, 
-              including Touch100k [16] and OBJECTFOLDER 1.0 [36], which we have concisely summarized in Table 1. Table 1 outlines several key 
-              characteristics of these datasets, such as their names, data types, object quantities and sources. OBJECTFOLDER 1.0 [36] introduced 
-              a dataset comprising 100 virtualized objects, each characterized by visual textures, acoustic simulations and tactile feedback, all 
-              encapsulated within a unified, object-centered implicit representation. OBJECTFOLDER 2.0 [37] extends OBJECTFOLDER 1.0 even further, 
-              increasing the number of virtual objects from 100 to 1,000, with greatly improved multi-modal rendering fidelity for visual, auditory 
-              and tactile modalities. To further investigate robotic manipulation, Wang et al. [38] constructed a multi-modal grasping dataset based 
-              on dexterous robotic hands. The dataset contains 2,550 data samples, including tactile data, joint information, timestamps, images and 
-              RGB-D videos. By integrating visual and tactile data, robots can perform manipulation tasks more efficiently. Additionally, VisGel [39]
-              and VinT-6D [42] can be used for robotic grasping tasks. The datasets Touch and Go [40], Touch100k [16], and TVL [41] are based on 
-              vision cameras and tactile sensors (GelSight) for acquiring robotic multi-modal data, which can be applied to understanding object 
-              surface properties.
-        
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-8 publication-text">
-
-              Point clouds can explicitly represent 3D structures through a dense set of points, enabling accurate geometric reconstruction and 
-              depth perception, with significant advantages in spatial understanding [45][46]. The integration of visual and tactile modalities into 
-              a unified point cloud framework (called a visual-tactile point cloud) allows us to exploit the complementary strengths of both modalities. 
-              Visual-tactile point cloud or voxel (point cloud voxelization) datasets, such as those in Rustler et al. [43] and David et al. [44], 
-              are currently oriented towards object reconstruction tasks. David et al. [44] constructed a synthetic visual-tactile voxel dataset 
-              containing 608 objects. Rustler et al. [43] constructed a visual-tactile point cloud dataset containing 87 unique grids from the YCB 
-              database [47] and the Grasp database [48]. However, the tactile point clouds/voxels in these datasets are randomly selected by following 
-              the true values of the occluded parts, rather than obtained from actuality. In addition, these datasets lack further processing, such as 
-              object classification or part segmentation, resulting in a lack of further use in more applications. In this paper, our aim is to construct 
-              a visual-tactile point cloud dataset from the real world for object understanding.
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </section>
   <section class="section3">
@@ -335,6 +311,21 @@
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors">
               <span class="author-block">Fig. 2:  Multi-modal sensing platform and scanning device in our experiments. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              This experimental platform integrates a vision camera and a robotic arm equipped with a tactile sensor, as shown in Fig. 3. 
+              The Intel RealSense D455 camera is used as the vision sensor, providing high-resolution RGB images and depth maps to support 
+              complex scene understanding and object recognition. The UR5 robotic arm is employed as the robotic manipulator, enabling precise 
+              operations through its six-degree-of-freedom design, high load capacity and flexible motion control. The self-developed E-Skin sensor
+               serves as the tactile sensor.
             </div>
           </div>
         </div>
