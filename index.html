@@ -79,21 +79,21 @@
       }
 
 
-
-      .image-container {
-            margin-bottom: 20px; /* 图片和解释文字之间的间距 */
-        }
- 
       .img {
-            max-width: 100%; /* 确保图片不会超出容器宽度 */
-            height: auto; /* 保持图片的宽高比 */
-            width: 300px; /* 你可以根据需要调整图片的宽度 */
-        }
- 
-        .image-caption {
-            font-size: 16px;
-            color: #221010;
-        }
+              margin-top: 20px; /* 减少与上一个 section 的距离 */
+            }
+          
+            .img img {
+              max-width: 80%; /* 设置图片宽度为容器宽度的 80%，可以根据需要调整 */
+              height: auto; /* 保持图片宽高比 */
+            }
+          
+            .img .content {
+              margin-top: 10px; /* 图片与描述文字的间距 */
+              font-size: 15px;
+              text-align: center;
+              line-height: 1.6; /* 增加文字的可读性 */
+            }
 
   </style>
   </head>
@@ -116,13 +116,13 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Feng Luan</span>
-              <span class="author-block">Jiarui Hu</span>
-              <span class="author-block">Changshi Zhou</span>
-              <span class="author-block">Zheng Yan</span>
-              <span class="author-block">Zhipeng Wang</span>
-              <span class="author-block">Yanmin Zhou</span>
-              <span class="author-block">Jiguang Yue</span>
+              <span class="author-block">Feng Luan,</span>
+              <span class="author-block">Jiarui Hu,</span>
+              <span class="author-block">Changshi Zhou,</span>
+              <span class="author-block">Zheng Yan,</span>
+              <span class="author-block">Zhipeng Wang,</span>
+              <span class="author-block">Yanmin Zhou,</span>
+              <span class="author-block">Jiguang Yue,</span>
               <span class="author-block">Bin He</span>
             </div>
    
@@ -137,11 +137,11 @@
     </div>
   </section>
  
-  <section class='img'>
+  <section class="img">
     <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/FIGBRAIN.png" alt="Centered Image""/>  
+      <img src="./static/images/FIGBRAIN.png" alt="Centered Image"/>  
     </div>
-    <div class="content has-text-justified"  style="text-align: center; font-size: 15px;">
+    <div class="content has-text-justified">
       Fig. 2: Multi-modal learning process and its applications. A robot acquires information about an object by means of visual and tactile sensors equipped on its body. 
       A concrete embodied perceptual model serves as the 'brain' of the robot. This model has the ability to understand objects, environment and multi-modal elements.
       It can fully understand the objects in the working scenario, decompose complex tasks and perform reliable actions.
