@@ -321,7 +321,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-8 publication-text">
-              This experimental platform integrates a vision camera and a robotic arm equipped with a tactile sensor, as shown in Fig. 3. 
+              This experimental platform integrates a vision camera and a robotic arm equipped with a tactile sensor, as shown in Fig. 2. 
               The Intel RealSense D455 camera is used as the vision sensor, providing high-resolution RGB images and depth maps to support 
               complex scene understanding and object recognition. The UR5 robotic arm is employed as the robotic manipulator, enabling precise 
               operations through its six-degree-of-freedom design, high load capacity and flexible motion control. The self-developed E-Skin sensor
@@ -337,7 +337,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="is-size-10 publication-text">
+            <div class="is-size-15 publication-text">
               Calibration process for spatial position recognition of tactile sensors:
             </div>
           </div>
@@ -350,8 +350,247 @@
       </video>
     </div>
   </section>
+  <section class="section3">
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/process.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 3:  The data collection process in our experiments. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/tactile.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 4:  The tactile data collection process. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              The entire tactile data collection process is illustrated in Fig. 3. Additionally, we demonstrate the real-world scenario of a 
+              robotic arm equipped with tactile sensors touching an object to acquire data, as shown in Fig. 4. The tactile data collection 
+              process involves controlling the UR5 to touch with objects, relying on our independently developed E-Skin sensor. 
+              The core idea of this process is to perceive locations that are not directly observable through vision, especially those 
+              parts with distinctive features. This core idea for exploration is consistent with the requirements of vision-tactile fusion scenarios. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/practiveob.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 5:  Partial objects in the dataset. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/Inputshow.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 6: Visual-tactile point clouds and ground truth. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/truth.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 7: Part segmentation results and point cloud distortion in point cloud acquired by camera. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/dadaanalysis.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 8: Percentage of each category in VisTacPoint. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              
+              the visual point cloud, tactile point cloud, tactile data and ground truth are paired to form our 
+              VisTacPoint dataset. Fig. 5 shows some objects included in VisTacPoint. Fig. 6 displays the ground 
+              truth of two objects with part labels, where the white points in the red box represent distortions caused 
+              by the real camera. Fig. 7 illustrates the visual-tactile point clouds and the ground truth in VisTacPoint.
+              As shown in Figure 8, we summarise the categories of all objects and their percentages.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section3">
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/filelist.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 9:  Summary of VisTacPoint dataset documentation.. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              VisTacPoint contains a total of 207 objects divided into eight categories. It is available in two versions: 
+              one is a pure vision version, which includes pairs of single-view point clouds and complete point clouds; 
+              the other is a visual-tactile version, encompassing single-view point clouds, tactile point clouds, tactile data 
+              and ground truth pairs. We summarized the collected and processed data files as shown in Fig. 9. 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              Furthermore, to simulate scenarios from different viewpoints and poses, we rotated the data five times 
+              by 60 degrees along each of the x, y, and z axis, thereby increasing the size of the dataset. After data 
+              selection and processing, datasets in the pure vision version (VisTacPoint-Vl) and the visual-tactile version (VisTacPoint-V2) 
+              was determined.
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              VisTacPoint datasets can be used for point cloud analysis tasks such as classification, reconstruction and part segmentation.
+              The classification and reconstruction results are shown in Figs. 10 and 11.
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/classifica.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 10:  Classification results. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/reconstruction.png" alt="Centered Image"/>  
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Fig. 11:  Qualitative analyses for reconstruction results. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-15 publication-text">
+              contributions:
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-8 publication-text">
+              The contributions of the VisTacPoint dataset are multi-faceted: it is derived from real-world sources, 
+              facilitates the development of more robust and generalizable models that are easily deployable in real-world scenarios, 
+              and sets a new benchmark for future research in point cloud analysis. By focusing on single-view point clouds and supplementing
+              them with tactile data to address occlusion problems, the dataset is closely aligned with real-world applications and provides a 
+              valuable resource for developing and evaluating algorithms under constrained sensing conditions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  
   <style>
     /* 确保所有文字居中 */
     .has-text-centered {
