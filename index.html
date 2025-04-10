@@ -39,98 +39,89 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <style>
+      body {
+          margin: 0;
+          padding: 20px; /* 页面两边的间距 */
+          font-family: Arial, sans-serif;
+      }
+
+      section {
+          margin-bottom: 40px; /* 每个section之间的间距 */
+      }
+
+      /* Section 1 样式 */
+      .section1 {
+          background-color: #f0f8ff;
+          padding: 20px;
+          border-left: 5px solid #007BFF;
+          font-size: 18px; /* 字体大小 */
+          font-weight: bold; /* 字体粗体 */
+      }
+
+      /* Section 2 样式 */
+      .section2 {
+          background-color: #f8d7da;
+          padding: 20px;
+          border-left: 5px solid #dc3545;
+      }
+
+      /* Section 3 样式 */
+      .section3 {
+          background-color: #d4edda;
+          padding: 20px;
+          border-left: 5px solid #28a745;
+      }
+  </style>
   </head>
 <body>
-  <section class="hero">
+  <section class="section1">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
+            <!-- 标题 -->
             <h1 class="title is-1 publication-title">VisTacPoint: A Visual and Tactile Multi-modal Fusion Dataset towards Embodied Perception</h1>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">Feng Luan</span>
+              <span class="author-block">Jiarui Hu</span>
+              <span class="author-block">Changshi Zhou</span>
+              <span class="author-block">Zheng Yan</span>
+              <span class="author-block">Zhipeng Wang</span>
+              <span class="author-block">Yanmin Zhou</span>
+              <span class="author-block">Jiguang Yue</span>
+              <span class="author-block">Bin He</span>
+            </div> -->
+   
+            <!-- 作者所属机构 -->
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-              </span>
+              <span class="author-block"><sup>1</sup>Tongji University</span>
             </div>
-  
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Washington,</span>
-              <span class="author-block"><sup>2</sup>Google Research</span>
-            </div>
-  
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- PDF Link. -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2011.12948"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2011.12948"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-                <!-- Video Link. -->
-                <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span>
-                <!-- Code Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/google/nerfies"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                    </a>
-                </span>
-                <!-- Dataset Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="far fa-images"></i>
-                    </span>
-                    <span>Data</span>
-                    </a>
-              </div>
-  
-            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+   
+  <style>
+    /* 确保所有文字居中 */
+    .has-text-centered {
+      text-align: center;
+    }
+   
+    /* 去掉作者名字的超链接样式，仅保留文本 */
+    .publication-authors .author-block a {
+      text-decoration: none; /* 去掉下划线 */
+      color: inherit;         /* 继承父元素颜色 */
+      pointer-events: none;   /* 禁用鼠标事件，防止点击 */
+      cursor: default;        /* 鼠标指针变为默认样式 */
+    }
+   
+    /* 可选：优化链接按钮的显示，使整体看起来更整齐 */
+    .publication-links .link-block {
+      margin: 0 5px;
+    }
+  </style>
 </body>
 </html>
