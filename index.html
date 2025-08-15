@@ -47,16 +47,17 @@
       }
 
       section {
-          margin-bottom: 5px; /* 每个section之间的间距 */
+          margin-bottom: 3px; /* 每个section之间的间距 */
       }
 
       /* Section 1 样式 */
       .section1 {
           /* background-color: #f0f8ff; */
-          padding: 5px;
+          /* padding: 1px; */
           /* border-left: 5px solid #007BFF; */
-          font-size: 20px; /* 字体大小 */
+          font-size: 25px; /* 字体大小 */
           font-weight: bold; /* 字体粗体 */
+          color: #3c3131;
       }
 
       /* Section 2 样式 */
@@ -66,8 +67,8 @@
           /* border-left: 5px solid #dc3545; */
           font-size: 8px; /* 字体大小 */
           font-weight: bold; /* 字体粗体 */
-          color: #2b06d0;
-          margin-top: 3px;
+          color: #2468de;
+          margin-top: 1px;
       }
 
       /* Section 3 样式 */
@@ -81,8 +82,8 @@
       }
       .sectionab {
       /* 你可以根据需要调整section的外边距 */
-      margin: 4px;
-    }
+      margin: 1px;
+      }
  
     .publication-abs {
       text-align: justify; /* 设置文本两端对齐 */
@@ -105,24 +106,10 @@
       /* margin-bottom: 10px; */
       line-height: 1.6; /* 可选：增加行高以提高可读性 */
     }
-/* 
-      .img {
-              margin-top: 1px; 
-            }
-          
-            .img img {
-              max-width: 60%; 
-              height: auto;
-            }
-          
-            .img .content {
-              margin-top: 3px; 
-              font-size: 5px;
-              text-align: center;
-              line-height: 1.6; 
-            } */
+
+
     .img img {
-        max-width: 40%;
+        max-width: 80%;
         /* width: 1200px;  */
         height: auto; /* 保持图片宽高比 */
       }
@@ -131,8 +118,131 @@
       .img {
         margin-top: 1px; /* 调整间距大小，例如 20px */
       }
-   
+            /* 标题样式 */
+       .title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #559e0b;
+        }
+        .title1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #820404;
+        }
+        
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab-button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            background: #f1f1f1;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px 5px 0 0;
+            font-size: 16px;
+        }
+        
+        .tab-button:hover {
+            background: #ddd;
+        }
+        
+        .tab-button.active {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        /* 图片框样式 */
+        .image-container {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: #f9f9f9;
+            position: relative;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            position: absolute;
+            display: none;
+        }
+        
+        .image-container img.active {
+            display: block;
+        }
+        
+        /* 解释文本样式 */
+        .caption {
+            text-align: center;
+            margin: 15px auto;
+            padding: 10px;
+            width: 600px;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            border-left: 4px solid #4CAF50;
+            background: #f9f9f9;
+        }
+        
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+
+
+                /* 自定义页脚样式 */
+        .footer {
+            background-color: #000; /* 黑色背景 */
+            color: #fff;          /* 白色文字 */
+            padding: 30px 0;      /* 上下内边距 */
+            font-size: 14px;      /* 较小字号 */
+        }
+        
+        .footer a {
+            color: #fff;          /* 链接白色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+        
+        .footer a:hover {
+            text-decoration: underline; /* 悬停时下划线 */
+        }
+        
+        .footer hr {
+            border-top: 1px solid rgba(255, 255, 255, 0.1); /* 浅灰色分隔线 */
+            margin: 20px 0;
+        }
+        
+        .footer ul {
+            padding-left: 0;      /* 去掉列表默认缩进 */
+            list-style: none;     /* 去掉列表圆点 */
+        }
+        
+        .footer ul li {
+            margin-bottom: 8px;   /* 列表项间距 */
+        }
   </style>
+
+  
   </head>
 <body>
   <section class="section1">
@@ -150,10 +260,7 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="section2">
-
-    <div class="hero-body">
+       <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
@@ -167,15 +274,26 @@
               <span class="author-block">Jiguang Yue, </span>
               <span class="author-block">Bin He</span>
             </div>
+             
    
-            <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors"> -->
               <span class="author-block">Tongji University</span>
-            </div>
+          </div>
 
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+
+  </section>
+  
+
+ 
+        
+
+
+
+<section class="section2">
     <div class="column has-text-centered">
       <div class="publication-links">
 
@@ -212,11 +330,15 @@
 
     </div>
   </section>
+
+
+
   <section class="sectionab">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
+            <hr style="border: none; height: 3px; background-color: #ddd; margin: 20px 0;">
             <div class="is-size-8 publication-abs">
               Abstract: Collecting and understanding three-dimensional (3D) information is critical to improving the intelligence of robots. 
               Robots typically rely on vision devices equipped at fixed positions to acquire 3D information about target objects. 
@@ -232,205 +354,340 @@
               requirements, we have constructed multiple variants of VisTacPoint for selection. Multiple visual-tactile fusion methods were applied to VisTacPoint 
               for different tasks. Finally, the challenges of multi-modal fusion for robotic embodied perception are summarized.
             </div>
+            
+            <!-- 关键词部分（CSS Grid 均匀分布） -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; width: 100%;">
+              <!-- 关键词1 -->
+              <div style="display: flex; align-items: center; padding: 8px 12px; background-color: #f5f5f5; border-radius: 4px;">
+                <div style="width: 16px; height: 16px; background-color: #78b659; margin-right: 8px;"></div>
+                <span style="font-weight: bold;">3D information</span>
+              </div>
+              
+              <!-- 关键词2 -->
+              <div style="display: flex; align-items: center; padding: 8px 12px; background-color: #f5f5f5; border-radius: 4px;">
+                <div style="width: 16px; height: 16px; background-color: #78b659; margin-right: 8px;"></div>
+                <span style="font-weight: bold;">Multi-modal fusion</span>
+              </div>
+              
+              <!-- 关键词3 -->
+              <div style="display: flex; align-items: center; padding: 8px 12px; background-color: #f5f5f5; border-radius: 4px;">
+                <div style="width: 16px; height: 16px; background-color: #78b659; margin-right: 8px;"></div>
+                <span style="font-weight: bold;">Datasets</span>
+              </div>
+              
+              <!-- 关键词4 -->
+              <div style="display: flex; align-items: center; padding: 8px 12px; background-color: #f5f5f5; border-radius: 4px;">
+                <div style="width: 16px; height: 16px; background-color: #78b659; margin-right: 8px;"></div>
+                <span style="font-weight: bold;">visual-tactile fusion</span>
+              </div>
+            </div>
+            <hr style="border: none; height: 3px; background-color: #ddd; margin: 20px 0;">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+         
+
+      <div class="title1">Some data show</div>
+  <!--  -->
+    <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-multiline is-centered">
+        <!-- 第一行动图 -->
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obsbox1.gif" alt="Animation 1" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obscup1.gif" alt="Animation 2" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obheadphone1.gif" alt="Animation 3" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/inpucamera1.gif" alt="Animation 4" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+ 
+        <!-- 第二行动图 -->
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/gtbox1.gif" alt="Animation 5" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/gtcup1.gif" alt="Animation 6" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/gtheadphone1.gif" alt="Animation 7" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/gtcamera1.gif" alt="Animation 8" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+                <!-- 第3行动图 -->
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obmous1.gif" alt="Animation 9" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obwashbottle.gif" alt="Animation 10" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obperfume1.gif" alt="Animation 11" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <img src="./static/images/obwinebottle.gif" alt="Animation 12" style="width: 200%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </section>
+
+
+
   <section class="img">
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/visationfi.png" alt="Centered Image"/>  
-    </div>
-    <!-- <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/viaual1.jpg" alt="Centered Image"/>  
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/FIGBRAIN.png" alt="Centered Image"/>  
-    </div> -->
-        
-    <!-- <div class="hero-body"> -->
-      <!-- <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 1: Object in dataset. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </section>
-  <section class="publication-text">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 1: Object in dataset. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <hr style="border: none; height: 3px; background-color: #ddd; margin: 20px 0;">
+    <hr style="border: none; height: 3px; background-color: #ddd; margin: 20px 0;">
+    <div class="title">Introduction</div>
 
 
-
-  <section class="publication-text">
     <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/device.png" alt="Centered Image"/>  
+      <img src="./static/images/FIGBRAIN.png" alt="Centered Image" style="width: 200%; height: auto;"/>
     </div>
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 2:  Multi-modal sensing platform and scanning device in our experiments. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="publication-text">
-    
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <video autoplay controls muted loop playsinline style="width: 30%; justify-content: center;">
-        <source src="./static/images/tactile_cali.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Vedio:  Calibration process for spatial position recognition of tactile sensors. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="img">
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/process.png" alt="Centered Image"/>  
-    </div> 
-  </section>
-
-  <section class="publication-text">
-    <!-- <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/process.png" alt="Centered Image"/>  
-    </div> -->
-    <!-- <div class="image-container image-small">
-      <img src="./static/images/process.png" alt="Small Image"/>
-    </div> -->
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 3:  The data collection process in our experiments. </span>
+              <span class="author-block">Fig. 1: Applications of vision-touch fusion. </span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/tactile.png" alt="Centered Image"/>  
+      <img src="./static/images/tabel1.png" alt="Centered Image" style="width: 200%; height: auto;"/>
     </div>
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 4:  The tactile data collection process. </span>
+              <span class="author-block">TABEL1: Datasets for visual and tactile fusion. </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  
-    <!-- <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/Inputshow.png" alt="Centered Image"/>  
-    </div>
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 5: Visual-tactile point clouds and ground truth. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    
-  <!-- </section> -->
-  <section class="publication-text">
-    
-
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/application.png" alt="Centered Image"/>  
-    </div>
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Fig. 5:  Classification results. </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
   </section>
   
+  <section class="img"></section>
 
-
-  <section class="publication-text">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-15 publication-abs">
-              Contributions:
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <div class="is-size-8 publication-abs">
-              The contributions of the VisTacPoint dataset are multi-faceted: it is derived from real-world sources, 
-              facilitates the development of more robust and generalizable models that are easily deployable in real-world scenarios, 
-              and sets a new benchmark for future research in point cloud analysis. By focusing on single-view point clouds and supplementing
-              them with tactile data to address occlusion problems, the dataset is closely aligned with real-world applications and provides a 
-              valuable resource for developing and evaluating algorithms under constrained sensing conditions.
-            </div>
-          </div>
-        </div>
-      </div>
+   <div class="title">Data Acquire and Analysis</div>
+    
+    <div class="tab-container">
+        <button class="tab-button active" onclick="showContent('image1')">Platform</button>
+        <button class="tab-button" onclick="showContent('image2')">Collection</button>
+        <button class="tab-button" onclick="showContent('image3')">Objects</button>
+        <button class="tab-button" onclick="showContent('image4')">Tactile</button>
+        <button class="tab-button" onclick="showContent('image5')">Input and GT</button>
+        <button class="tab-button" onclick="showContent('image6')">Some Visual Point cloud</button>
+        <button class="tab-button" onclick="showContent('image7')">Some GT</button>
+        <button class="tab-button" onclick="showContent('image8')">Point cloud distortion</button>
+        <button class="tab-button" onclick="showContent('image9')">Percentage </button>
     </div>
     
-  <!-- <section class="publication-text">
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/visual.jpg" alt="Centered Image"/>  
+    <!-- 图片框 -->
+    <div class="image-container">
+        <img id="image1" class="active" src="./static/images/process.png" alt="Platform">
+        <img id="image2" src="./static/images/collection.png" alt="Collection">
+        <img id="image3" src="./static/images/practiveob.png" alt="Objects">
+        <img id="image4" src="./static/images/tactile.png" alt="Tactile">
+        <img id="image5" src="./static/images/Inputshow.png" alt="Input and GT">
+        <img id="image6" src="./static/images/viaual1.jpg" alt="Some Visual Point cloud">
+        <img id="image7" src="./static/images/visual.jpg" alt="Some GT">
+        <img id="image8" src="./static/images/vistac_advance.jpg" alt="Point cloud distortion">
+        <img id="image9" src="./static/images/Percentage.jpg" alt="Percentage">
     </div>
-    <div style="display: flex; justify-content: center; align-items: center;">  
-      <img src="./static/images/viaual1.jpg" alt="Centered Image"/>  
+    
+    <!-- 动态解释文本 -->
+    <div id="caption1" class="caption active">
+        <strong>Platform:</strong> The process of building the multi-modal platform in the experiment.
     </div>
-  </section> -->
+    <div id="caption2" class="caption" style="display: none;">
+        <strong>Collection:</strong> The data collection process in our experiments.
+    </div>
+    <div id="caption3" class="caption" style="display: none;">
+        <strong>Objects:</strong> Some objects and point clouds in VisTacPoint dataset.
+    </div>
+    <div id="caption4" class="caption" style="display: none;">
+       <strong>Tactile:</strong> Tactile sensor contact with objects.
+    </div>
+    <div id="caption5" class="caption" style="display: none;">
+        <strong>Input and GT</strong> The blue point clouds represent the point clouds captured by the visual device, the yellow point clouds represent the point clouds captured by the tactile device, the gray point clouds represent the ground truth.
+    </div>
+    <div id="caption6" class="caption" style="display: none;">
+        <strong>Some Visual Point cloud:</strong>Some visual point cloud are shown.
+    </div>
+    <div id="caption7" class="caption" style="display: none;">
+        <strong>Some GT:</strong>Some GT point cloud are shown.
+    </div>
+    <div id="caption8" class="caption" style="display: none;">
+        <strong>Point cloud distortion</strong>The point clouds within the red boxes represent the parts that deviate from the actual shape. The green boxes represent the corresponding actual shape.
+    </div>
+    <div id="caption9" class="caption" style="display: none;">
+        <strong>Percentage</strong>Percentage of each category in VisTacPoint.
+    </div>
+    
+    <hr>
+ 
+      <script>
+        function showContent(imageId) {
+            // 切换图片
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach(img => img.classList.remove('active'));
+            document.getElementById(imageId).classList.add('active');
+            
+            // 切换解释文本
+            const captions = document.querySelectorAll('.caption');
+            captions.forEach(cap => cap.style.display = 'none');
+            document.getElementById('caption' + imageId.match(/\d+/)).style.display = 'block';
+            
+            // 更新按钮状态
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+    </section>       
+    
 
+
+   
+               
+     
+
+ 
+  <section class="img">
+
+  <div class="title">Experiments</div>
+  <div class="title1">(1) Classification</div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/classifica.png" alt="Centered Image" style="width: 50%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"> Classification results for 5 methods. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="title1">(2) Reconstruction</div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/table2.png" alt="Centered Image" style="width: 400%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Table 2 Quantitative analysis for reconstruction results with VisTacPoint-V1. The numbers shown are CD values scaled by 1000. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/tabel3.png" alt="Centered Image" style="width: 400%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Table 3 Quantitative analysis for reconstruction results with VisTacPoint-V2. The numbers shown are CD values scaled by 1000. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center;">  
+      <img src="./static/images/RE_VIS.jpg" alt="Centered Image" style="width: 40%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Qualitative analyses for reconstruction results with VisTacPoint-V1. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: center; align-items: center;">  
+          <img src="./static/images/RE_VISANDTAC.jpg" alt="Centered Image" style="width: 40%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Qualitative analyses for reconstruction results for PointAttN with VisTacPoint-V2. We compared the results from the vision case with the results from the visual-tactile case. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center;">  
+          <img src="./static/images/real_ex.png" alt="Centered Image" style="width: 50%; height: auto;"/>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Reconstruction results visualized for PCN and PointAttN trained on different datasets. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
 
 
 
@@ -454,5 +711,39 @@
       margin: 0 5px;
     }
   </style>
+
+
+
+   <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li>Yanmin Zhou</li>
+                        <li>Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University</li>
+                        <li>yanmin.zhou@tongji.edu.cn</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#">GitHub Repository</a></li>
+                        <li><a href="#">Dataset Download</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small">© 2022 Shanghai Research Institute for Intelligent Autonomous Systems.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
